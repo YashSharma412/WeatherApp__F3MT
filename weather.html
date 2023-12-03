@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="shortcut icon" href="./assets/icons/weather-app.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="weather.css">
+    <title>Your Weather</title>
+</head>
+<body id="weather_page-body">
+    <section id="map_section">
+        <div class="page-section">
+            <h1 class="light">Welcome to Weather App</h1>
+            <h3 class="light">Here is your current location</h3>
+        </div>
+
+        <div id="coordinates" class="page-section">
+            <div>Lat: <span id="lat">12.34567</span></div>
+            <div>Lat: <span id="long">12.34567</span></div>
+        </div>
+
+        <div id="map_container" class="page-section">
+            <!-- <iframe src="" frameborder="0"></iframe> -->
+        </div>
+    </section>
+    <section id="weather-details">
+
+        <div class="page-section data">
+            <h1>Your Weather Data</h1>
+
+            <div class="">
+                <div class="box_cont">
+                    Location: <b id="location">New Delhi</b>
+                </div>
+                <div class="box_cont">
+                    Wind Speed: <b id="speed">100kmph</b>
+                </div>
+                <div class="box_cont">
+                    Humidity: <b id="humidity">10</b>
+                </div>
+                <div class="box_cont">
+                    Time Zone: <b id="timezone">GMT +530</b>
+                </div>
+                <div class="box_cont">
+                    Pressure: <b id="pressure">10atm</b>
+                </div>
+                <div class="box_cont">
+                    Wind Direction: <b id="direction">North West</b>
+                </div>
+                <div class="box_cont">
+                    UV Index: <b id="uv-index">500</b>
+                </div>
+                <div class="box_cont">
+                    Feels like: <b id="feels">30</b>&deg;
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="weather.js"></script>
+</body>
+</html>

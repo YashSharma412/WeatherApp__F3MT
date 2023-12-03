@@ -1,0 +1,86 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,700;1,300;1,700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--my-fontFamily);
+}
+
+:root {
+  --clr_Secondary: #270846;
+  --clrPrimary: #360369;
+  --txt_clr_light: #fff;
+  --txt_clr_dark: #000;
+
+  --fw_bold: 700;
+  --fw_mild: 300;
+
+  --my-fontFamily: "Montserrat", sans-serif;
+}
+
+body.home {
+    opacity: 1;
+  width: 100dvw;
+  height: 100dvh;
+  background-color: var(--clrPrimary);
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+  align-items: center;
+  justify-content: center;
+  color: var(--txt_clr_light);
+  transition: all 1s ease-in;
+  /* transition: opacity 1s ease-in; */
+
+}
+
+.page-section {
+  padding: 25px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.home main{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.home h1 {
+  text-align: center;
+  font-size: 12vw;
+  /* transform: translateY(-50%); */
+  font-weight: var(--fw_bold);
+  margin-bottom: 25px;
+}
+
+.hide{
+    transition: all 0.5s ease;
+    opacity: 0;
+}
+
+.home button {
+    margin: auto;
+    width: 50%;
+    min-width: fit-content;
+    text-wrap: nowrap;
+  padding: 15px;
+  color: var(--txt_clr_dark);
+  font-size: 24px;
+  font-weight: var(--fw_mild);
+}
+
+@media screen and (max-width: 767px) {
+  .page-section{
+    padding: 12px;
+  }
+  .home h1 {
+    font-size: 30px;
+  }
+
+  .home button{
+    font-size: 18px;
+  }
+}
